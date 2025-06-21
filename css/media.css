@@ -1,0 +1,332 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        gap: 40px;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;   
+    }
+
+    .logotype {
+        margin-right: 120px;
+        padding: 24px 0;
+    }
+
+    .menu-item {
+        padding-top: 24px;
+        padding-bottom: 24px;   
+    }
+    .menu-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        padding: 24px 0;
+        position: relative;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .menu-link:hover,
+    .menu-link:focus {
+        color: #404bbf;
+    }
+    
+    .menu-link.current {
+        color: #404bbf;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .menu-link.current::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px;
+    
+    }
+
+    .contacts {
+        font-style: normal;
+        display: block;
+    }
+
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contacts-link:hover,
+    .contacts-link:focus {
+        color: #404bbf;
+    }
+
+    .contacts-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.67;
+        letter-spacing: 0.04em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        ;
+    }
+
+    .hero {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
+    }
+
+    @media screen and (min-resolution: 2x) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab2x.jpg);
+        }
+        
+    }
+
+    .hero-title {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+
+    .team .container {
+        padding: 96px 108px;
+        max-width: 768px;
+    }
+
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .benefits-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .benefits-item-title {
+        text-align: left;
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+        column-gap: 24px;
+
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .portfolio-list {
+        gap: 24px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+
+    .page-footer .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        column-gap: 24px;
+        padding-left: 108px;
+        align-items: flex-start;
+    }
+
+    .footer-wrapper {
+        text-align: left;
+    }
+
+    .footer-text {
+        max-width: 264px;
+    }
+
+    .footer-social-text {
+        text-align: left;
+    }
+
+    .footer-form {
+        display: flex;
+        gap: 24px;
+        align-items: start;
+    }
+
+    .footer-form-input {
+        display: flex;
+        gap: 24px;
+        text-align: left;
+    }
+
+    .footer-btn {
+        margin: 0;
+    }
+
+    .modal {
+        width: 408px;
+        min-height: 584px;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 1158px) {
+
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+    
+
+    .logotype {
+        margin-right: 76px;
+    }
+
+    .contacts {
+        margin-left: auto;
+    }
+
+    .contacts-list {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;   
+    }
+
+    .contacts-link {
+        padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+
+
+    .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    }
+
+    @media screen and (min-resolution: 2x) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office2x.jpg);
+        }
+        
+    }
+
+    .hero-title {
+        margin-bottom: 48px;
+    }
+
+    .team .container {
+        padding: 0 15px;
+        max-width: 1158px;
+    }
+
+    .benefits {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .benefits-icons-container {
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        background: #f4f4fd;
+        display: flex;
+        gap: 24px;
+        margin-bottom: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .benefits-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .benefits-item-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .benefits-item-text {
+        font-weight: 400;
+    }
+
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .portfolio {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .portfolio-list {
+        gap: 48px 24px;
+    }
+
+    .portfolio-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .page-footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .page-footer .container {
+        display: flex;
+        align-items: baseline;
+        padding: 0;
+        gap: 0;
+    }
+
+    .footer-wrapper {
+        margin-right: 120px;
+    }
+
+    .footer-text {
+        max-width: 264px;
+    }
+
+    .footer-form {
+        margin-left: 80px;
+    }
+
+}
